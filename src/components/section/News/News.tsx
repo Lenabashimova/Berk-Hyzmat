@@ -166,11 +166,11 @@ export default function News() {
             id="news"
             className="px-12.5 lg:px-25 mb-25"
         >
-            <div className="flex flex-col gap-6 lg:gap-13">
+            <div className="flex flex-col gap-10 lg:gap-13">
 
                 {/* Header */}
                 <div className="flex flex-col lg:justify-center items-center gap-4 leading-12">
-                    <hr className="border-2 border-[#1FAC4D] w-350 flex mb-30"/>
+                    <hr className="border-2 border-[#1FAC4D] w-350 flex mb-20"/>
                     <h1 className="text-[40px] lg:hidden font-semibold text-[#222d65]">
                         {t.testimonials.title}
                     </h1>
@@ -182,7 +182,7 @@ export default function News() {
                 </div>
 
                 {/* Mobile — 3 → 6 → 9 → ... */}
-                <div className="grid gap-6 lg:hidden">
+                <div className="grid gap-10 lg:hidden">
                     {posts
                         .slice(0, revealSteps * 3)
                         .map(renderPost)}
@@ -204,7 +204,6 @@ export default function News() {
                         </button>
                     </div>
                 )}
-
             </div>
         </section>
     );

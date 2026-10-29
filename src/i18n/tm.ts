@@ -7,8 +7,8 @@ const TM = {
         contacts:'Habarlaşmak',
     },
     homepage:{
-        title:'Infrastruktura döredýäris. Önümçiligi ösdürýäris.',
-        subtitle:'Gurluşyk we taslama işlerini amala aşyrýarys, önümçilik kuwwatlyklaryny ösdürýäris hem-de Türkmenistanyň senagat we oba hojalyk ösüşine hyzmat edýän döwrebap desgalary döredýäris',
+        title:'Ýaşamak isleýän giňişligiňizi döredýäris',
+        subtitle:'Gurluşyk, abadanlaşdyryş we jemagat hyzmatlaryny ýerine ýetirip, ygtybarlylygy, rahatlygy we estetikany bitewi giňişlikde birleşdirýäris',
         button1:'Has giňişleýin',
         button2:'Häzir başla',
     },
@@ -26,8 +26,8 @@ const TM = {
 
     process:{
         title:'Proýektlarymyz',
-        subtitle_lg:'Biz gurluşyk-gurnama we taslama işlerinde ýöriteleşip, ýaşaýyş, önümçilik we infrastruktura taslamalaryny durmuşa geçirýäris. Gurluşyk ugry bilen bir hatarda, kompaniýa köpugurly maldarçylyk toplumyny ösdürýär hem-de derman önümleriniň lomaý we bölek söwdasy pudagynda iş alyp barýar. Dürli ugurlardaky taslamalary durmuşa geçirip, biz döwrebap desgalary döredýäris we önümçilik kuwwatlyklaryny ösdürýäris, Türkmenistanyň ykdysady we infrastruktura ösüşine öz goşandymyzy goşýarys',
-        subtitle:'Biz gurluşyk we taslama işlerinde ýöriteleşip, maldarçylyk önümçiligini we dermançylyk ugruny ösdürýäris hem-de döwrebap desgalary döredip, Türkmenistanyň ösüşine öz goşandymyzy goşýarys'
+        subtitle_lg:'Biz ýaşaýyş we täjirçilik desgalarynyň gurluşygy, çäkleriň abadanlaşdyrylyşy we ýaşaradylyşy, landşaft dizaýny, seýilgähleriň, baglaryň we amatly jemgyýetçilik giňişlikleriniň döredilmegi bilen meşgullanýarys. Şeýle hem desgalary we çäkleri arassalamak, saklamak we hyzmat etmek, şol sanda inženerçilik ulgamlaryna hyzmat etmek boýunça toplumlaýyn hyzmatlary hödürleýäris. Biziň işimiz ygtybarly, döwrebap we estetiki desgalary, şeýle hem arassa, amatly we tertipli şäher gurşawyny döretmäge gönükdirilendir',
+        subtitle:'Biz gurluşyk, çäkleri abadanlaşdyrmak we ýaşaradyş, şeýle hem desgalara we çäklere toplumlaýyn hyzmat etmek bilen meşgullanýarys we döwrebap, ygtybarly hem-de amatly giňişlikleri döredýäris'
     },
 
     testimonials:{

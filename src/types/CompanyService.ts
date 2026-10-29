@@ -9,24 +9,27 @@ export type ServiceCategoryBase = {
     createdAt: string;
     updatedAt: string;
     deletedAt: string | null;
+    translations?: ServiceCategoryTranslation[];
 };
 
 export type ServiceCategory = ServiceCategoryBase & {
-    services: CompanyService[];
+    services?: CompanyService[];
 };
+
+
 export type ServiceTranslation = {
     id: string;
     serviceId: string;
     locale: string;
     title: string;
     description: string;
-    createdAt?: string;
-    updatedAt?: string;
 }; 
+
+
 export type CompanyService = {
     id: string;
     companyId?: string;
-    categoryId?: string;
+    categoryId?: string | null;
     title: string;
     description: string;
     image?: string | null;
@@ -35,6 +38,14 @@ export type CompanyService = {
     updatedAt?: string;
     deletedAt?: string | null;
 
-    category: ServiceCategoryBase;
+    category?: ServiceCategoryBase | null;
     translations?: ServiceTranslation[];
 };
+
+export interface ServiceCategoryTranslation {
+    id: string;
+    categoryId: string;
+    locale: string;
+    name: string;
+    description: string;
+}

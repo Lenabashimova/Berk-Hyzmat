@@ -1,6 +1,6 @@
 import type { Project } from "@/types/Project";
 import { Language } from "@/i18n";
-import type { CompanyService, ServiceCategory } from "@/types/CompanyService";
+import type { CompanyService, ServiceCategoryBase } from "@/types/CompanyService";
 import type { Post } from "@/types/Post";
 
 
@@ -13,24 +13,22 @@ export const apiLocale = {
 } as const;
 
 export async function getCompanyServices(): Promise<CompanyService[]> {
-    const response = await fetch(
-        `${API_URL}/api/v1/companies/${COMPANY_SLUG}/services`
-    );
-    console.log(`${API_URL}/api/v1/companies/${COMPANY_SLUG}/services`)
+    const url = `${API_URL}/api/v1/companies/${COMPANY_SLUG}/services`;
+    const response = await fetch(url);
+
     if (!response.ok) {
-        throw new Error(`API error: ${response.status}`);
+        throw new Error(`API error: ${response.status} (${url})`);
     }
 
     return response.json();
 }
 
-export async function getServiceCategories(): Promise<ServiceCategory[]> {
-    const response = await fetch(
-        `${API_URL}/api/v1/companies/${COMPANY_SLUG}/service-categories`
-    );
+export async function getServiceCategories(): Promise<ServiceCategoryBase[]> {
+    const url = `${API_URL}/api/v1/companies/${COMPANY_SLUG}/service-categories`;
+    const response = await fetch(url);
 
     if (!response.ok) {
-        throw new Error(`API error: ${response.status}`);
+        throw new Error(`API error: ${response.status} (${url})`);
     }
 
     return response.json();
@@ -101,4 +99,4 @@ export async function getPostBySlug(
     return response.json();
 }
 
-export const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL ?? "https://melhemli-turkmen-api.com";
+export const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL ?? "https://berk-hyzmat-api.com";

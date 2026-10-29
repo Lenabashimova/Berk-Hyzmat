@@ -57,18 +57,18 @@ export default async function NewsPostPage({
         });
 
     return (
-        <div className="px-9 py-10 lg:px-25 lg:pb-30">
+        <div className="px-9 py-10 lg:pb-30 lg:px-0 lg:py-0">
             <NewsHeader/>
             <div className="mx-auto mt-10 max-w-[1950px]">
                 <Link
                     href={`/${lang}`}
-                    className="flex gap-2 text-[20px] items-center font-medium text-[#1FAC4D] hover:text-[#1c5830] transition mb-8"
+                    className="flex gap-2 text-[23px] items-center font-medium text-[#1FAC4D] hover:text-[#1c5830] transition mb-8"
                 >
                     <ArrowLeft size={22} />
                     {t.testimonials.backHome}
                 </Link>
 
-                <div className="grid lg:gap-10 lg:grid-cols-[1fr_340px]">
+                <div className="grid lg:gap-12 lg:grid-cols-[minmax(0,1fr)_400px]">
 
                     {/* Main article */}
                     <article>
@@ -99,15 +99,15 @@ export default async function NewsPostPage({
                         )}
 
                         <div
-                            className="text-[20px] leading-7 text-[#0C233E] [&_p]:mb-4 last:[&_p]:mb-0"
+                            className="text-[20px] leading-7 text-justify text-[#0C233E] [&_p]:mb-4 last:[&_p]:mb-0"
                             dangerouslySetInnerHTML={{ __html: cleanDescription }}
                         />
                     </article>
 
                     {/* Sidebar */}
                     {sidebarPosts.length > 0 && (
-                        <aside>
-                            <h2 className="text-[35px] font-bold text-[#1FAC4D] mb-5">
+                        <aside className="min-w-0">
+                            <h2 className="text-[32px] font-bold text-[#1FAC4D] mb-6">
                                 {t.testimonials.moreNews}
                             </h2>
 
@@ -116,10 +116,10 @@ export default async function NewsPostPage({
                                     <Link
                                         key={sidePost.id}
                                         href={`/${lang}/news/${sidePost.slug}`}
-                                        className="flex gap-3 group"
-                                    >
+                                        className="flex gap-4 group min-w-0"
+                                        >
                                         {sidePost.coverImageUrl && (
-                                            <div className="relative h-20 w-20 shrink-0 overflow-hidden rounded-lg">
+                                            <div className="relative h-20 w-24 shrink-0 overflow-hidden rounded-lg">
                                                 <Image
                                                     src={getMediaUrl(sidePost.coverImageUrl)}
                                                     alt={
@@ -133,15 +133,15 @@ export default async function NewsPostPage({
                                             </div>
                                         )}
 
-                                        <div className="flex flex-col justify-center">
-                                            <h3 className="text-[14px] font-medium leading-snug text-[#0C233E] line-clamp-2 group-hover:text-[#B42226] transition-colors">
+                                        <div className="min-w-0 flex flex-col justify-center">
+                                            <h3 className="text-[16px] font-medium leading-snug text-[#0C233E] line-clamp-3 group-hover:text-[#B42226] transition-colors">
                                                 {sidePost.translation?.title ?? sidePost.title}
                                             </h3>
-
-                                            <div className="flex items-center gap-1 text-[12px] text-gray-400 mt-1">
-                                                <Clock size={12} />
+                                            <div className="flex items-center gap-1 text-[15px] text-gray-400 mt-2 whitespace-nowrap">
+                                                <Clock size={12} className="shrink-0" />
                                                 <span>
-                                                    {formatTime(sidePost.publishedAt)} {formatDate(sidePost.publishedAt)}
+                                                    {formatTime(sidePost.publishedAt)}{" "}
+                                                    {formatDate(sidePost.publishedAt)}
                                                 </span>
                                             </div>
                                         </div>
@@ -150,7 +150,6 @@ export default async function NewsPostPage({
                             </div>
                         </aside>
                     )}
-
                 </div>
             </div>
         </div>

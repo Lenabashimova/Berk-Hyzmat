@@ -23,16 +23,16 @@ export default function NewsHeader() {
     };
 
     return (
-        <header className="w-full py-6">
-            <div className="flex items-center px-20 justify-between cursor-pointer">
+        <header className="w-full">
+            <div className="flex items-center bg-[#1756a6] px-20 justify-between cursor-pointer">
                 <Image
-                    src="/logo-new.png"
+                    src="/logo.jpg"
                     width={300}
                     height={190}
                     alt="logo"
                 />
 
-                <div className="flex items-center gap-2 text-[#1FAC4D] text-[20px]">
+                <div className="flex items-center gap-2 text-white text-[23px]">
                     {languages.map((lang) => (
                         <button
                             key={lang}

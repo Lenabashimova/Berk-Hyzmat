@@ -3,12 +3,12 @@ const EN = {
         home:'Home',
         news:'News',
         projects:'Our Projects',
-        services:'Services',
+        services:'Our Services',
         contacts:'Contacts',
     },
     homepage:{
-        title:'Building Infrastructure. Developing Production.',
-        subtitle:'We carry out construction and design works, expand production capacities, and develop modern facilities that support the industrial and agricultural development of Turkmenistan',
+        title:'Creating spaces you love to live in',
+        subtitle:'We provide construction, landscaping and communal services, combining reliability, comfort and aesthetics to create better living environments',
         button1:'Discover More',
         button2:'Get Started Now'
     },
@@ -26,8 +26,8 @@ const EN = {
 
     process:{
         title:'Our projects',
-        subtitle_lg:'We specialize in construction, installation and design works, delivering residential, industrial and infrastructure projects. Alongside our construction activities, the company is developing a multifunctional livestock complex and operates in the wholesale and retail pharmaceutical sector. By implementing projects across diverse fields, we create modern facilities and expand production capacities, contributing to the economic and infrastructure development of Turkmenistan',
-        subtitle:'We specialize in construction and design, develop livestock production and pharmaceutical activities, creating modern facilities and contributing to the development of Turkmenistan'
+        subtitle_lg:'We specialize in the construction of residential and commercial facilities, territory improvement and landscaping, landscape design, and the development of parks, gardens and comfortable public spaces. We also provide comprehensive cleaning, maintenance and facility management services, including engineering systems maintenance. Our activities are focused on creating reliable, modern and aesthetically pleasing facilities, as well as clean, comfortable and well-maintained urban environments',
+        subtitle:'We specialize in construction, landscaping, greening and comprehensive facility and territory maintenance, creating modern, reliable and comfortable spaces'
     },
 
     testimonials:{

@@ -124,10 +124,10 @@ export default function Project() {
     return (
         <section
             id="process"
-            className="px-9 py-7.5 flex flex-col lg:gap-40 gap-12 lg:py-25 lg:px-25"
+            className="px-9 py-15 flex flex-col lg:gap-40 gap-12 lg:py-25 lg:px-25"
         >
             <div className="text-[#222d65] flex flex-col gap-10 lg:flex-row lg:justify-between items-center lg:gap-20">
-                <h1 className="font-semibold leading-14 text-[48px] lg:text-[100px] lg:leading-tight">
+                <h1 className="font-semibold leading-14 text-[40px] lg:text-[100px] lg:leading-tight">
                     {t.process.title}
                 </h1>
 
@@ -142,7 +142,7 @@ export default function Project() {
 
             <div className="flex flex-col gap-4">
                 <div
-                    className="relative h-50 lg:min-h-80 mb-40"
+                    className="relative h-20 lg:min-h-80 mb-40"
                     style={{
                         touchAction: isMobile ? "pan-y" : "auto",
                     }}
@@ -208,7 +208,7 @@ export default function Project() {
                                     }
                                     className={`w-3 h-3 rounded-full transition-colors cursor-pointer ${
                                         currentPage === index
-                                            ? "bg-[#B42226]"
+                                            ? "bg-[#1fac4d]"
                                             : "bg-[#0C233E]/25 hover:bg-[#0C233E]/50"
                                     }`}
                                 />
